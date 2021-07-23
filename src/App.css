@@ -1,0 +1,71 @@
+.App {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.App__title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.App__container {
+  color: #ffffff;
+  margin: 0 auto;
+  width: 60%;
+  height: 80vh;
+  padding: 20px;
+  background-color: #545f7d;
+  display: flex;
+  align-items: center;
+}
+
+.fieldPlay {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fieldPlay__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #44425e;
+  width: 60vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fieldPlay__item {
+  width: 20vh;
+  height: 20vh;
+  border-right: 3px solid #a855c1;
+  border-left: 3px solid #a855c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fieldPlay__item:nth-child(n + 4):nth-child(n) {
+  border-top: 3px solid #a855c1;
+}
+
+.fieldPlay__item:nth-child(3n) {
+  border-right: none;
+}
+
+.fieldPlay__item:nth-last-child(n + 4):nth-last-child(n) {
+  border-bottom: 3px solid #a855c1;
+}
+
+.fieldPlay__item:nth-last-child(3n) {
+  border-left: none;
+}
+
+.fieldPlay__item svg {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
